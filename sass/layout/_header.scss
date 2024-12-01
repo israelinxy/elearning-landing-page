@@ -1,0 +1,13 @@
+header.header-principal{
+  padding-top: 20px;
+  padding-bottom: 38px;
+  .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img{
+      width: 89px;
+      height: 35px;
+    }   
+  }
+}

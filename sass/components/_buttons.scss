@@ -1,0 +1,11 @@
+.button{
+  @include button();
+}
+
+.button--orange-magenta{
+  @include button--orange-magenta();
+}
+
+.button-link{
+  @include button-link();
+}

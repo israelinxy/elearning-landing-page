@@ -1,0 +1,11 @@
+.container{
+  padding-left: 1rem;
+  padding-right: 1rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  @include breakpoint(tablet){
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}

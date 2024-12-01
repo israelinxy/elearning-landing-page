@@ -1,0 +1,66 @@
+.activities{
+  padding-bottom: 80px;
+  @include breakpoint(desktop){
+    margin-top: 120px;
+  }
+  &__header{
+    display: inline-block;
+    background-image: $linear-gradient-orange-magenta;
+    padding: 28px 28px;    
+    margin-bottom: 16px;
+    border-radius: 10px;
+    h2{
+    color: $white;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 32px;    
+    @include breakpoint(tablet) {
+      margin-top: 65px;
+    }
+    }
+  }
+  &__item {
+    background-color: $white-dark;
+    border-radius: 10px;
+    padding: 22px 28px 22px;
+    position: relative;
+    margin-bottom: 16px;
+    &:last-child {
+      margin-bottom: 0;
+      @include breakpoint(tablet) {
+        margin-bottom: 16px;
+      }
+    }
+    &-icon{
+      span{
+        margin-bottom: 10px;
+      }
+    }
+    &-title{
+      font-weight: 800;
+      font-size: 20px;
+      color: $black;
+      margin-top: 16px;
+      margin-bottom: 16px;
+    }
+    &-description{
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 26px;
+      color: $grey;
+      padding-bottom: 24px;
+    }
+  }
+
+  .container{
+    @include breakpoint(tablet) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px 30px;
+    }
+    @include breakpoint(tablethorizontal) {
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 80px 30px;
+    }
+  }
+}

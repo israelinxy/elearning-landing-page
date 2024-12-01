@@ -1,0 +1,83 @@
+// RWD
+@mixin breakpoint($bp) {
+  @if $bp == tablet {
+    @media (min-width: $bp-tablet) {
+      @content;
+    }
+  }
+
+  @if $bp == tablethorizontal {
+    @media (min-width: $bp-tablet-horizontal) {
+      @content;
+    }
+  }
+
+  @if $bp == desktop {
+    @media (min-width: $bp-desktop) {
+      @content;
+    }
+  }
+
+  @if $bp == desktopxl {
+    @media (min-width: $bp-desktop-xl) {
+      @content;
+    }
+  }
+}
+
+//buttons
+
+@mixin button{
+  display: inline-block;
+  color: $white;
+  background-color: $black;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 40px;
+  &:hover {
+    background-color: $blue;
+  }
+}
+
+@mixin button--orange-magenta{
+  @include button();
+  background-image: $linear-gradient-orange-magenta;
+  padding: 15px 38px;
+  border-radius: 40px;
+  &:hover {
+    background: var(
+      --Gradient-1-Hover,
+      linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.5) 0%,
+        rgba(255, 255, 255, 0.5) 100%
+      ),
+      linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%)
+    );
+  }
+}
+
+@mixin button--pink-blue{
+  @include button();
+  background-image: $linear-gradient-pink-blue;
+  padding: 12px 24px;
+  border-radius: 40px;
+  &:hover {
+    background: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.5) 0%,
+        rgba(255, 255, 255, 0.5) 100%
+      ),
+      linear-gradient(180deg, #4851ff -54.32%, #f02aa6 100%) !important;
+  }
+}
+
+@mixin button-link() {
+  color: $pink;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 18px;
+  &:hover{
+    color: $pink-light;
+  }
+}

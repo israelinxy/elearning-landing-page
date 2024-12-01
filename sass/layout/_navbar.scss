@@ -1,0 +1,22 @@
+nav.nav-principal{  
+  ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    a{
+      font-size: 14px;
+      font-weight: 700;
+    }
+  } 
+}
+
+nav.nav-footer{  
+  ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    a{
+      @include button--pink-blue();
+    }
+  } 
+}
