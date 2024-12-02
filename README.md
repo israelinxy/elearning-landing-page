@@ -1,6 +1,6 @@
 # Elearning Langin-Page 🌐
 
-Este proyecto presenta una landing page responsiva desarrollada con HTML y Sass, optimizada para dispositivos móviles, tablets y pantallas de escritorio.
+Este proyecto presenta una landing page responsiva desarrollada con Vite, optimizada para dispositivos móviles, tablets y pantallas de escritorio.
 
 ---
 
