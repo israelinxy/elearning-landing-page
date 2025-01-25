@@ -5,7 +5,7 @@ Este proyecto presenta una landing page responsiva desarrollada con Vite, optimi
 ---
 
 <div align="center">
-  <img src="layout.png" alt="Layout" width="55%"/>
+  <img src="layout.png" alt="Layout" width="80%"/>
 </div>
 
 
